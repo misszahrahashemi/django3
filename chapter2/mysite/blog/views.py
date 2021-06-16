@@ -4,12 +4,12 @@ from .forms import EmailPostForm, CommentForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.core.mail import send_mail
 from taggit.models import Tag
+from django.db.models import Count
 
 
 def post_list(request, tag=None):
     object_list = Post.objects.filter(status='published')
     tag = None
-
     if "tag_slug":
         tag = get_object_or_404(Tag, slug="tag_slug")
         object_list = object_list.filter(tags__in=[tag])
@@ -72,7 +72,8 @@ def post_detail(request, year, month, day, post):
                    'comments': comments,
                    'new_comment': new_comment,
                    'comment_form': comment_form,
-                   'similar_posts': similar_posts}) 
+                   'similar_posts': similar_posts
+                   }) 
 
 
 def post_share(request, post_id):

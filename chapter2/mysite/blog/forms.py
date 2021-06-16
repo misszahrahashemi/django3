@@ -10,5 +10,5 @@ class EmailPostForm(forms.Form):
 
 class CommentForm(forms.ModelForm):
     class Meta:
-        model = "Comment"
+        model = Comment
         fields = ('name', 'email', 'body')                             
