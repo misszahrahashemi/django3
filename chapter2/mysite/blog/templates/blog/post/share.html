@@ -4,30 +4,30 @@
 
 {% block content %}
     {% if sent %}
-    <h1>E-mail successfully sent</h1>
+     <h1>E-mail successfully sent</h1>
     <p>
-    {{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
+    {{ post.title }}"was successfully sent to {{ form.cleaned_data.to }}.
     </p>
     {% else %}
     <h1>Share "{{ post.title }}" by e-mail</h1>
     <form method="post">
     {% comment %} {{ form.as_p }} {% endcomment %}
     <p>
-نام ارسال کننده :
-    {{ form.name}}
+    نام ارسال کننده:
+    {{form.name}}
     </p>
     <p>
-    ایمیل :
-    {{ form.email}}
+    ایمیل:
+    {{form.email}}
     </p>
     <p>
-    شخص دریافت کننده :
-    {{ form.to}}
-    </p>
+    شخص دریافت کننده:
+    {{form.to}}
     <p>
-    توضیحات :
-    {{ form.comments}}
-</p>
+    توضیحات:
+    {{form.commets}}
+</p>    
+
 
     {% csrf_token %}
     <input type="submit" value="Send e-mail">
