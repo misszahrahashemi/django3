@@ -5,13 +5,13 @@ body {
 }
 
 a { 
-    color:#00abff;
+    color:#25da4c;
     text-decoration:none; 
 }
 
 h1 { 
     font-weight:normal;
-    border-bottom:1px solid #bbb;
+    border-bottom:1px solid rgb(119, 65, 106);
     padding:0 0 10px 0;
 }
 
@@ -30,14 +30,14 @@ h2 {
     float:right;
     width:30%;
     padding:10px;
-    background:#efefef; 
+    background:#4d99d8; 
     height:100%;
 }
 
 p.date { 
-    color:#ccc;
+    color:rgb(209, 212, 35);
     font-family: georgia, serif;
-    font-size: 12px;
+    font-size: 13px;
     font-style: italic; 
 }
 
@@ -51,28 +51,28 @@ p.date {
 label { 
     float:left;
     clear:both;
-    color:#333;
+    color:rgb(197, 85, 32);
     margin-bottom:4px; 
 }
 input, textarea { 
     clear:both;
     float:left;
     margin:0 0 10px;
-    background:#ededed;
+    background:#91b3a7;
     border:0;
     padding:6px 10px;
     font-size:12px;
 }
 input[type=submit] {
     font-weight:bold;
-    background:#00abff;
-    color:#fff;
+    background:#2cca7b;
+    color:rgb(236, 185, 90);
     padding:10px 20px;
     font-size:14px;
     text-transform:uppercase; 
 }
 .errorlist { 
-    color:#cc0033;
+    color:#b4e235;
     float:left;
     clear:both;
     padding-left:10px; 
@@ -83,10 +83,10 @@ input[type=submit] {
     padding:10px;
 }
 .comment:nth-child(even) {
-    background:#efefef;
+    background:#54acd4;
 }
 .comment .info {
     font-weight:bold;
     font-size:12px;
-    color:#666;
+    color:rgb(127, 66, 129);
 }
