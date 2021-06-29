@@ -1,12 +1,14 @@
 {% extends "base.html" %}
-{% block title %}ویرایش حساب{% endblock %}
+
+{% block title %}Edit your account{% endblock %}
+
 {% block content %}
-<h1 dir="rtl">حساب خود را ویرایش</h1>
-<p dir="rtl">شما با استفاده از فرم زیر می توانید حساب خود را ویرایش کنید:</p>
-<form method="post" enctype="multipart/form-data" dir="rtl">
-    {{ user_form.as_p }}
-    {{ profile_form.as_p }}
-    {% csrf_token %}
-    <p dir="rtl"><input type="submit" value="ذخیره تغییرات"></p>
-</form>
+    <h1>Edit your account</h1>
+    <p>You can edit your account using the following form:</p>
+    <form method="post" enctype="multipart/form-data">
+        {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" value="Save changes"></p>
+    </form>
 {% endblock %}

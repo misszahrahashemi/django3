@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'shop.apps.ShopConfig',
     'taggit',
-    
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
