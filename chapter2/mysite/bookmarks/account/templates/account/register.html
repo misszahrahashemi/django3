@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}Create an account{% endblock %}
+{% block title %}ایجاد یک حساب کاربری{% endblock %}
 
 {% block content %}
-    <h1>Create an account</h1>
-    <p>Please, sign up using the following form:</p>
+    <h1>ایجاد یک حساب کاربری</h1>
+    <p>لطفا, ثبت نام با استفاده از فرم زیر:</p>
     <form method="post">
         {{ user_form.as_p }}
         {% csrf_token %}
